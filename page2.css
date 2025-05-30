@@ -1,0 +1,351 @@
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+ a{
+    text-decoration: none;
+ }
+ .wrapper{
+    height: 100vh;
+    display: flex;
+ }
+.side-bar{
+    width: 15%;
+    padding: 20px 8px 0 8px;
+    border-top: 1px solid #ccc;
+    border-right: 1px solid #ccc;
+    border-bottom: 1px solid #ccc;
+    border-radius: 0 20px 20px 0;
+}
+.logo2{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.icon-cover, .menu{
+    margin-right: 5px;
+    width: 30px;
+    height: fit-content;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 5px;
+    border-radius: 30px;background-color: #d63853;
+    color: #ececec;
+}
+.menu, .sider-bar .menu-items span{
+    display: none;
+}
+
+.side-bar ul{
+    margin-top: 45px;
+    list-style: none;
+}
+.side-bar ul li{
+    padding: 20px;
+    font-weight: 900;
+    color: #5a5a5a;
+}
+.side-bar ul li div{
+    border: 0.5px solid #a36b6b;
+    border-radius: 15px;
+    padding: 20px 8px 10px 8px;
+    font-size: 13px;   
+}
+.side-bar ul li div .btn-cover{
+    margin-top: 3px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  
+}
+.side-bar ul li div .btn-cover button{
+    padding: 5px;
+    background-color: #fae0e0;
+    border: none;
+    outline: none;
+    border-radius: 10px;
+    font-size: 11px;
+    color: #d66262;
+}
+.side-bar ul li div p{
+    margin-top: 10px;
+    font-size: 10px;   
+}
+.side-bar ul li:hover{
+    border-right: 3px solid #b91212;
+    background-color: #fae0e0;
+}
+.no_hover{
+    border-right: none;
+    background-color: none;
+
+}
+.movie-pane{
+    padding: 30px;
+    width: 85%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    overflow-y: scroll;
+}
+
+.container1{
+    margin: 0 30px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.movie-report{
+    margin-top: 15px;
+    width: 90%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.movie-report ul {
+    list-style: circle outside;
+    padding-left: 0;
+}
+.movie-report ul li{
+    display: inline;
+    margin-right: 1em;
+}
+.movie-report ul{
+    color: #5a5a5a;
+}
+.action, .drama{
+    margin-right: 3px;
+    padding: 2px 5px;
+    border: 1px solid #e2e2e2;
+    border-radius: 20px;
+    font-size: 10px;
+    color: #d65f5f;
+}
+.rate{
+    font-weight: bold;
+    color: #a7a7a7;
+}
+ .ratings{
+    font-weight: bold;
+    color: #c5c5c5;
+}
+.movie-article{
+    margin-top: 20px;
+    width: 90%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.article{
+    width: 60%;
+}
+.article p{
+    margin-bottom: 15px;
+    color: #5a5a5a;
+}
+.article p span{
+    color: #d6626c;
+}
+.more{
+    border: 1px solid #e2e2e2;
+    border-radius: 5px;
+    padding: 5px 5px 5px 0;
+    display: flex;
+    justify-content: space-between;
+}
+.more .btns{
+    border-radius: 5px;
+    background-color: #d63853;
+    padding: 5px;
+    font-size: 12px;
+    font-weight: bold;
+    color: #ececec;
+}
+.more .indic-menu{
+    padding: 5px;
+    font-size: 12px;
+    font-weight: bold;
+    color: #5a5a5a;
+
+}
+.notice {
+    width: 40%;
+    margin-left: 8px;   
+}
+ .showtime{
+    width: 95%;
+    padding: 8px;
+    text-align: center;
+    border-radius: 8px;
+    background-color: #d63853;
+    font-size: 12px;
+    color: #ffffff;
+}
+.morewatch{
+    margin-top: 8px;
+     width: 95%;
+     padding: 8px;
+     text-align: center;
+     border: 1px solid #b91212;
+     border-radius: 8px;
+     background-color: #fae0e0;
+     font-size: 12px;
+     font-weight: bold;
+ }
+ .img{
+    width: 100%;
+    position: relative;
+ }
+ .img div{
+    margin-top: 15px;
+    width: 100%;
+    height: 150px;
+    display: flex;
+    gap: 3px;
+ }
+ 
+ .notice .img div img{
+    width: 31%;
+ }
+ .notice .img div img:first-child{
+    border-radius: 5px 0 0 5px;
+ }
+ .notice .img div img:last-child{
+    border-radius: 0 5px 5px 0;
+ }
+ /* .opacity{
+     position: absolute;
+     bottom: 0;
+    background-color: #e2e2e2;
+    font-size: 14px;
+    color: #fff;
+ } */
+
+@media only screen and (max-width: 600px){
+    .wrapper{
+        max-height: 100vh;
+        flex-direction: column;
+        /* align-items: center;
+        justify-content: center; */
+        overflow: auto;
+    }
+    .side-bar{
+        width: auto;
+        border: none;
+        padding: 5px;  
+    }
+    .logo2{
+        align-items: start;
+        justify-content: space-between;
+    }
+    .logo2 .icon-cover, .menu{
+        width: 20px;
+        height: fit-content;
+        padding: 1px;
+        display: block;
+        text-align: center;
+    }
+    .logo2 span{
+        display: none;
+    }
+    .logo2 .icon-cover i{
+        font-size: 10px;
+    }
+    .logo2 .menu i{
+        font-size: 12px;
+    }
+    .side-bar ul{
+        margin-top: 10px;
+        background-color: azure;
+    }
+    .side-bar ul span{
+        float: right;
+    }
+    .side-bar ul span button{
+        outline: none;
+        border: none;
+        border-radius: 5px;
+        padding: 5px;
+        background-color: #e3f1f1;
+        font-weight: bold;
+        color: #d45555;
+        opacity: 0.7;
+    }
+    .side-bar ul li{
+        padding: 5px;
+        font-size: 14px;
+        font-weight: 100;
+    }
+    .side-bar ul a li i{
+        display: none;
+    }
+    .side-bar ul li div{
+        display: none;
+    }
+    .logo2 .menu-items{
+        display: none;
+    }
+    .side-bar .menu-items{
+        display: none;
+    }
+    .show{
+        display: block;
+    }
+    .movie-pane{
+        padding: 5px;
+        width: 100%;
+    }
+    iframe{
+        width: 100%;
+    }
+    .container1{
+        margin: 0;
+        width: 100%;
+        padding: 5px;
+    }
+    .movie-report{
+        margin-top: 15px;
+        width: 100%;
+    }
+    .movie-report ul .mv-detail{
+        font-size: 14px;
+    }
+    .movie-report ul li{
+        display: inline;
+        margin-right: 0.1em;
+        font-size: 13px;
+    }
+    .action, .drama{
+        margin-right: 3px;
+        padding: 1px 3px;
+        border-radius: 18px;
+    }
+    .rate{
+        font-size: 13px;
+    }
+    .rate .ratings{
+        font-size: 12px;
+    }
+    .movie-article{
+        margin-top: 8px;
+        width: 100%;
+        flex-direction: column;
+    }
+    .article{
+        width: 100%;
+    }
+    .more {
+        display: none;
+    }
+    .notice {
+        width: 100%;   
+    }
+    /* i {
+        pointer-events: none;
+    } */
+}
