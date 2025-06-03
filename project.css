@@ -45,7 +45,7 @@ header{
     display: none;
 }
 form{
-    width: 300px;
+    width: 350px;
     display: flex;
     justify-content: space-between;
     height: fit-content;
@@ -70,7 +70,7 @@ form{
     margin-left: 5px
     border: 1px solid grey;
     outline: none;
-    padding: 3px;
+    padding: 2px;
     background: transparent;
 }
 
