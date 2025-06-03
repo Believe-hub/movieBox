@@ -68,7 +68,7 @@ form{
 }
 .search-click{
     margin-left: 5px
-    border: none;
+    border: 1px solid grey;
     outline: none;
     padding: 3px;
     background: transparent;
