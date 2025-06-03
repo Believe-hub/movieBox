@@ -52,13 +52,15 @@ function showMovies(movies){
                             })
 }
 
-formElem.onsubmit = (e) => {
-    e.preventDefault()
-    const searchTerm = searchElem.value;
-    if(searchTerm && searchTerm !== ''){
-        getMovies(searchUrl + searchTerm)
-        searchTerm.value = '';
-    }else{
-        window.reload();
+searchBtn.onclick = () =>{
+    formElem.onsubmit = (e) => {
+        e.preventDefault()
+        const searchTerm = searchElem.value;
+        if(searchTerm && searchTerm !== ''){
+            getMovies(searchUrl + searchTerm)
+            searchTerm.value = '';
+        }else{
+            window.reload();
+        }
     }
 }
