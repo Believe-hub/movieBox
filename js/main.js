@@ -1,5 +1,6 @@
-const searchElem = document.getElementById('search')
-const formElem = document.getElementById('form')
+const searchElem = document.getElementById('search');
+const searchBtn = document.querySelector('.search__btn');
+const formElem = document.getElementById('form');
 const movieContents = document.querySelector(".movie-content");
 
 //6c0a59c45c5eb25ee38d932d675b49e1
