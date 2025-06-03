@@ -46,7 +46,7 @@ header{
 }
 form{
     min-width: 350px;
-    display: flex;
+    display: inline-block;
     justify-content: space-between;
     height: fit-content;
     padding: 3px 6px;
